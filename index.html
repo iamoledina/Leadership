@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: url('https://i.imgur.com/tOvWwgy.jpg') center/cover no-repeat;
@@ -51,20 +52,11 @@
       margin-bottom: 20px;
       font-size: 2rem;
     }
-    .hero-image {
-      background: #f9f9f9;
-      height: 300px;
-      margin-bottom: 40px;
-      border-radius: 10px;
-    }
-    .program-overview {
+    .investment, .trainer, .application, .faq {
       background: #f9f9f9;
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 40px;
-    }
-    .program-overview ul {
-      padding-left: 20px;
     }
     table {
       width: 100%;
@@ -80,36 +72,12 @@
       background: #4B2C82;
       color: white;
     }
-    .packages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .faq-list {
+      list-style: none;
+      padding: 0;
     }
-    .package {
-      flex: 1;
-      background: #f1f1f1;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .package h3 {
-      color: #4B2C82;
-      font-size: 1.5rem;
-    }
-    .package p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-    .cta-section {
-      background: #4B2C82;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .cta-section h2 {
-      margin: 0;
-      font-size: 2rem;
+    .faq-list li {
+      margin-bottom: 15px;
     }
     footer {
       background: #333;
@@ -136,78 +104,49 @@
     <p>In today’s fast-paced economy, leadership isn’t just a skill—it’s a competitive edge that drives business success.</p>
   </section>
 
-  <section class="program-overview">
-    <h2>Program Goals</h2>
+  <section class="investment">
+    <h2>Investment</h2>
+    <p><strong>Full Access Package – $1,350</strong></p>
+    <p>This package grants participants complete access to all 5 Leadership Lab sessions, including the in-person and virtual workshops. It is designed for business owners and managers who want to build essential leadership skills and implement them effectively in their organizations.</p>
+    <p><strong>Leadership Mastermind Package – $1,800</strong></p>
+    <p>This package includes everything from the Full Access Package, plus 3 additional mastermind sessions. These sessions are designed for participants to come together to discuss leadership challenges, share insights, and brainstorm solutions collectively. It's an opportunity to collaborate with peers, gain new perspectives, and receive group support on real-world leadership issues.</p>
+  </section>
+
+  <section class="trainer">
+    <h2>Your Trainer</h2>
+    <p>Over the past decade, <strong>Ali Moledina</strong> has provided interactive and engaging workshops that leave a lasting impact on his audience. Through his coaching sessions, he has inspired countless individuals and teams to embrace their strengths, conquer challenges, and become exceptional high performers.</p>
+    <p>Ali is dedicated to helping teams unleash their untapped potential and supporting individuals to discover their innate leadership abilities. His coaching approach extends beyond mere theory, as he navigates clients through practical strategies and actionable insights to ignite transformative change.</p>
+  </section>
+
+  <section class="application">
+    <h2>The Application Process</h2>
+    <p><strong>Eligibility Criteria:</strong></p>
     <ul>
-      <li>Serve as agents of positive transformation and drive progress.</li>
-      <li>Effectively influence team dynamics and motivate individuals towards shared goals.</li>
-      <li>Elevate team performance by guiding them toward higher standards of excellence.</li>
-      <li>Become a reliable force in executing strategic objectives with consistency and success.</li>
+      <li>You hold a leadership position within a small business or non-profit organization.</li>
+      <li>You are based in Minnesota.</li>
+      <li>You are able and willing to actively participate, including having your camera on during virtual sessions, contributing ideas, and engaging in group work.</li>
+    </ul>
+    <p><strong>Steps:</strong></p>
+    <ol>
+      <li>Complete the application form to express your interest and confirm your eligibility.</li>
+      <li>Once your application is submitted, it will be carefully reviewed.</li>
+      <li>If your application is successful, you will receive a confirmation email with details on how to proceed with payment.</li>
+    </ol>
+    <p><strong>Important Deadlines:</strong></p>
+    <ul>
+      <li>Application Deadline: December 5th, 2024.</li>
+      <li>Payment Deadline: Payment must be made within 5 days of acceptance to secure your spot in the program.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Program Overview</h2>
-    <table>
-      <tr>
-        <th>Session</th>
-        <th>Date</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>Leadership Principles</td>
-        <td>January 8th, 2025</td>
-        <td>Explore foundational leadership principles to set the stage for success.</td>
-      </tr>
-      <tr>
-        <td>Managing with Personality</td>
-        <td>January 10th, 2025</td>
-        <td>Understand MBTI to adapt leadership styles for diverse teams.</td>
-      </tr>
-      <tr>
-        <td>Create a Winning Culture</td>
-        <td>January 17th, 2025</td>
-        <td>Build a growth-oriented company culture that motivates teams.</td>
-      </tr>
-      <tr>
-        <td>Recruit A-Team Players</td>
-        <td>January 24th, 2025</td>
-        <td>Proven strategies for hiring and retaining top talent.</td>
-      </tr>
-      <tr>
-        <td>Coaching to Elevate</td>
-        <td>January 31st, 2025</td>
-        <td>Learn to provide feedback, set expectations, and develop teams.</td>
-      </tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>Packages and Pricing</h2>
-    <div class="packages">
-      <div class="package">
-        <h3>Full Access Package</h3>
-        <p><strong>$1,350</strong></p>
-        <p>Includes all five sessions, virtual and in-person workshops.</p>
-        <a href="#apply" class="cta-button">Sign Up</a>
-      </div>
-      <div class="package">
-        <h3>Leadership Mastermind Package</h3>
-        <p><strong>$1,800</strong></p>
-        <p>Includes everything in Full Access plus three additional mastermind sessions.</p>
-        <a href="#apply" class="cta-button">Sign Up</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <h2>Transform Your Leadership Today!</h2>
-    <a href="#apply" class="cta-button">Apply Now</a>
-  </section>
-
-  <footer>
-    <p>© 2024 Kaizen Consulting. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-  </footer>
-</body>
-</html>
+  <section class="faq">
+    <h2>FAQ</h2>
+    <ul class="faq-list">
+      <li><strong>1. What is the difference between the Full Access and the Leadership Mastermind?</strong><br>
+        Full Access includes all five sessions (four virtual and one in-person). Leadership Mastermind adds three additional 75-minute mastermind sessions for group collaboration and problem-solving.</li>
+      <li><strong>2. Can I upgrade to the Leadership Mastermind Package after signing up?</strong><br>
+        Yes, you can upgrade for $590 at any time after signing up.</li>
+      <li><strong>3. What if I need to cancel after I’ve paid?</strong><br>
+        We generally have a no-refund policy but will review on a case-by-case basis.</li>
+      <li><strong>4. Where is the in-person event taking place?</strong><br>
+        The venue will be within a 20-minute drive of Minneapolis. The exact location will
