@@ -13,28 +13,33 @@
       color: #333;
     }
     header {
-      background: #4B2C82; /* Kaizen purple */
+      background: url('https://via.placeholder.com/1600x500') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 80px 20px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin: 10px 0 20px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     }
     .cta-button {
       background: #FFA500;
       color: white;
-      padding: 10px 20px;
+      padding: 15px 25px;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.2rem;
       border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .cta-button:hover {
+      background: #ff8c00;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     section {
       padding: 20px;
@@ -44,12 +49,22 @@
     section h2 {
       color: #4B2C82;
       margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .hero-image {
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      height: 300px;
+      margin-bottom: 40px;
+      border-radius: 10px;
     }
     .program-overview {
       background: #f9f9f9;
       padding: 20px;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+    }
+    .program-overview ul {
+      padding-left: 20px;
     }
     table {
       width: 100%;
@@ -80,6 +95,11 @@
     }
     .package h3 {
       color: #4B2C82;
+      font-size: 1.5rem;
+    }
+    .package p {
+      font-size: 1.1rem;
+      margin: 10px 0;
     }
     .cta-section {
       background: #4B2C82;
@@ -107,10 +127,11 @@
   <header>
     <h1>Leadership Lab</h1>
     <p>A Management Training Program for Small Business Owners and Nonprofits</p>
-    <a href="#apply" class="cta-button">Apply Now</a>
+    <a href="#apply" class="cta-button">Join the Program</a>
   </header>
 
   <section>
+    <div class="hero-image"></div>
     <h2>About the Leadership Lab</h2>
     <p>The 'Leadership Lab’ is a hands-on management training experience designed to empower small business owners and their teams with the practical skills to lead with confidence and inspire positive change in their organizations.</p>
     <p>In today’s fast-paced economy, leadership isn’t just a skill—it’s a competitive edge that drives business success.</p>
@@ -169,17 +190,19 @@
         <h3>Full Access Package</h3>
         <p><strong>$1,350</strong></p>
         <p>Includes all five sessions, virtual and in-person workshops.</p>
+        <a href="#apply" class="cta-button">Sign Up</a>
       </div>
       <div class="package">
         <h3>Leadership Mastermind Package</h3>
         <p><strong>$1,800</strong></p>
         <p>Includes everything in Full Access plus three additional mastermind sessions.</p>
+        <a href="#apply" class="cta-button">Sign Up</a>
       </div>
     </div>
   </section>
 
   <section class="cta-section">
-    <h2>Ready to Transform Your Leadership?</h2>
+    <h2>Transform Your Leadership Today!</h2>
     <a href="#apply" class="cta-button">Apply Now</a>
   </section>
 
