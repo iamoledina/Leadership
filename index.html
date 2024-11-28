@@ -7,83 +7,115 @@
   <title>Leadership Lab | Kaizen Consulting</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
       color: #333;
-      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
     }
     header {
       background: url('https://i.imgur.com/tOvWwgy.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
     header h1 {
-      font-size: 3rem;
-      margin: 0;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 3.5rem;
+      margin-bottom: 20px;
     }
     header p {
-      font-size: 1.2rem;
-      margin: 10px 0 20px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      font-size: 1.4rem;
+      margin-bottom: 30px;
     }
-    .cta-button {
+    header .cta-button {
       background: #FFA500;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 30px;
       text-decoration: none;
       font-size: 1.2rem;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .cta-button:hover {
-      background: #ff8c00;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
     section {
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
     }
     section h2 {
-      color: #4B2C82;
+      font-size: 2.5rem;
       margin-bottom: 20px;
-      font-size: 2rem;
+      color: #4B2C82;
     }
-    .investment, .trainer, .application, .faq {
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .investment-section, .trainer-section, .application-section, .faq-section {
       background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 40px;
+      border-radius: 10px;
+      padding: 40px 20px;
+      margin: 50px auto;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
+    .investment-section h3, .trainer-section h3, .application-section h3, .faq-section h3 {
+      font-size: 2rem;
+      color: #4B2C82;
+      margin-bottom: 15px;
     }
-    table th, table td {
-      border: 1px solid #ddd;
-      padding: 10px;
+    .investment-section p, .trainer-section p, .application-section p, .faq-section p {
       text-align: left;
+      line-height: 1.8;
     }
-    table th {
+    .investment-details {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .investment-details .package {
+      flex: 0 0 45%;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .investment-details .package h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .investment-details .package p {
+      font-size: 1rem;
+    }
+    .cta-section {
       background: #4B2C82;
       color: white;
+      text-align: center;
+      padding: 50px 20px;
     }
-    .faq-list {
-      list-style: none;
-      padding: 0;
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
-    .faq-list li {
-      margin-bottom: 15px;
+    .cta-section a {
+      background: #FFA500;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
     }
     footer {
       background: #333;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 50px;
     }
     footer a {
       color: #FFA500;
@@ -94,59 +126,69 @@
 <body>
   <header>
     <h1>Leadership Lab</h1>
-    <p>A Management Training Program for Small Business Owners and Nonprofits</p>
-    <a href="#apply" class="cta-button">Join the Program</a>
+    <p>A Premium Training Program for Small Business Owners and Nonprofits</p>
+    <a href="#apply" class="cta-button">Join the Leadership Lab</a>
   </header>
 
-  <section>
-    <h2>About the Leadership Lab</h2>
-    <p>The 'Leadership Lab’ is a hands-on management training experience designed to empower small business owners and their teams with the practical skills to lead with confidence and inspire positive change in their organizations.</p>
-    <p>In today’s fast-paced economy, leadership isn’t just a skill—it’s a competitive edge that drives business success.</p>
+  <div class="container">
+    <section>
+      <h2>About the Leadership Lab</h2>
+      <p>The 'Leadership Lab’ is a hands-on training experience designed to empower small business owners and their teams with the practical skills to lead confidently and inspire positive change.</p>
+      <p>Leadership is not just a skill—it’s a competitive advantage that drives success.</p>
+    </section>
+
+    <section class="investment-section">
+      <h3>Your Investment</h3>
+      <div class="investment-details">
+        <div class="package">
+          <h4>Full Access Package – $1,350</h4>
+          <p>Access to all 5 sessions, including in-person and virtual workshops. Perfect for leaders looking to build foundational skills.</p>
+        </div>
+        <div class="package">
+          <h4>Leadership Mastermind Package – $1,800</h4>
+          <p>Includes everything in the Full Access Package, plus 3 additional mastermind sessions for collaborative problem-solving and peer networking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trainer-section">
+      <h3>Your Trainer</h3>
+      <p><strong>Ali Moledina</strong> is a seasoned coach with over a decade of experience facilitating engaging workshops that leave a lasting impact. He has worked with companies across Europe and the US to help teams unlock their potential and develop transformative leadership skills.</p>
+      <p>Ali combines practical strategies and actionable insights to inspire teams and individuals to become exceptional high performers.</p>
+    </section>
+
+    <section class="application-section">
+      <h3>The Application Process</h3>
+      <p><strong>Eligibility Criteria:</strong></p>
+      <p>You must hold a leadership role in a small business or nonprofit, be based in Minnesota, and actively participate in all sessions.</p>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Submit the application form.</li>
+        <li>Your application will be reviewed for eligibility.</li>
+        <li>If accepted, you'll receive payment details and further instructions.</li>
+      </ol>
+      <p><strong>Important Deadlines:</strong></p>
+      <ul>
+        <li>Application Deadline: December 5th, 2024</li>
+        <li>Payment Deadline: Within 5 days of acceptance</li>
+      </ul>
+    </section>
+
+    <section class="faq-section">
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>1. Can I upgrade to the Leadership Mastermind Package later?</strong><br> Yes, you can upgrade anytime for $590.</p>
+      <p><strong>2. Where is the in-person event?</strong><br> The event will be within 20 minutes of Minneapolis, with exact details shared closer to the date.</p>
+    </section>
+  </div>
+
+  <section class="cta-section">
+    <h2>Ready to Transform Your Leadership?</h2>
+    <a href="#apply">Apply Now</a>
   </section>
 
-  <section class="investment">
-    <h2>Investment</h2>
-    <p><strong>Full Access Package – $1,350</strong></p>
-    <p>This package grants participants complete access to all 5 Leadership Lab sessions, including the in-person and virtual workshops. It is designed for business owners and managers who want to build essential leadership skills and implement them effectively in their organizations.</p>
-    <p><strong>Leadership Mastermind Package – $1,800</strong></p>
-    <p>This package includes everything from the Full Access Package, plus 3 additional mastermind sessions. These sessions are designed for participants to come together to discuss leadership challenges, share insights, and brainstorm solutions collectively. It's an opportunity to collaborate with peers, gain new perspectives, and receive group support on real-world leadership issues.</p>
-  </section>
-
-  <section class="trainer">
-    <h2>Your Trainer</h2>
-    <p>Over the past decade, <strong>Ali Moledina</strong> has provided interactive and engaging workshops that leave a lasting impact on his audience. Through his coaching sessions, he has inspired countless individuals and teams to embrace their strengths, conquer challenges, and become exceptional high performers.</p>
-    <p>Ali is dedicated to helping teams unleash their untapped potential and supporting individuals to discover their innate leadership abilities. His coaching approach extends beyond mere theory, as he navigates clients through practical strategies and actionable insights to ignite transformative change.</p>
-  </section>
-
-  <section class="application">
-    <h2>The Application Process</h2>
-    <p><strong>Eligibility Criteria:</strong></p>
-    <ul>
-      <li>You hold a leadership position within a small business or non-profit organization.</li>
-      <li>You are based in Minnesota.</li>
-      <li>You are able and willing to actively participate, including having your camera on during virtual sessions, contributing ideas, and engaging in group work.</li>
-    </ul>
-    <p><strong>Steps:</strong></p>
-    <ol>
-      <li>Complete the application form to express your interest and confirm your eligibility.</li>
-      <li>Once your application is submitted, it will be carefully reviewed.</li>
-      <li>If your application is successful, you will receive a confirmation email with details on how to proceed with payment.</li>
-    </ol>
-    <p><strong>Important Deadlines:</strong></p>
-    <ul>
-      <li>Application Deadline: December 5th, 2024.</li>
-      <li>Payment Deadline: Payment must be made within 5 days of acceptance to secure your spot in the program.</li>
-    </ul>
-  </section>
-
-  <section class="faq">
-    <h2>FAQ</h2>
-    <ul class="faq-list">
-      <li><strong>1. What is the difference between the Full Access and the Leadership Mastermind?</strong><br>
-        Full Access includes all five sessions (four virtual and one in-person). Leadership Mastermind adds three additional 75-minute mastermind sessions for group collaboration and problem-solving.</li>
-      <li><strong>2. Can I upgrade to the Leadership Mastermind Package after signing up?</strong><br>
-        Yes, you can upgrade for $590 at any time after signing up.</li>
-      <li><strong>3. What if I need to cancel after I’ve paid?</strong><br>
-        We generally have a no-refund policy but will review on a case-by-case basis.</li>
-      <li><strong>4. Where is the in-person event taking place?</strong><br>
-        The venue will be within a 20-minute drive of Minneapolis. The exact location will
+  <footer>
+    <p>© 2024 Kaizen Consulting. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
